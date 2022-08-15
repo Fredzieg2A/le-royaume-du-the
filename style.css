@@ -122,3 +122,14 @@ section{
     padding: 10px;
 }
 
+/* Section Business */
+
+.business{
+    display: flex;
+    justify-content: space-between;
+}
+
+.business-description{
+    width: 570px;
+    text-align: justify;
+}

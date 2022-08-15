@@ -4,10 +4,36 @@
     font-family: 'Poppins', sans-serif;
 }
 
-section{
-    width: 1160px;
-    margin: 0 auto;
+h3{
+    font-size: 18px;
+    color: #dc143c;
 }
+
+p{
+    font-size: 16px;
+}
+
+.btn-red{
+    border: none;
+    background-color: #dc143c;
+    color: #fff;
+
+    width: 234px;
+    text-align: center;
+}
+
+.btn-red:hover{
+    background-color: #fff;
+    color: #dc143c !important;
+    border: 1px solid #dc143c;
+    transition: O.5s;
+}
+
+.btn-red p{
+    padding: 0px 12px;
+}
+
+/* Construction du Header */
 
 header{
     background-color: #8fb900;
@@ -16,16 +42,18 @@ header{
     color: #fff;
 }
 
-header a{
+.btn{
     color: #fff;
     text-decoration: none;
     font-size: 18px;
     font-weight: bold;
     padding: 12px;
     border: 2px solid #fff;
+    border-radius: 4px;
+    display: block;
 }
 
-header a:hover{
+.btn:hover{
     background-color: #fff;
     color: #8fb900;
     transition: 0.5s;
@@ -43,9 +71,15 @@ header div{
     padding: 15px 0px;
 }
 
+/* Construction du hero */
+
+section{
+    width: 1160px;
+    margin: 80px auto 0 auto;
+}
+
 .main-image{
     position: relative;
-    margin-top: 80px;
 }
 
 .main-image div{
@@ -65,3 +99,26 @@ header div{
     color: #fff;
     margin: 0px 17px;
 }
+
+/* Construction des cartes */
+
+.container-items{
+    display: flex;
+    justify-content: space-between;
+}
+
+.items{
+    margin-top: 80px;
+}
+
+.item{
+    width: 280px;
+    border: 1px solid #dc143c;
+    border-radius: 4px;
+    margin-top: 25px;
+}
+
+.item-description{
+    padding: 10px;
+}
+

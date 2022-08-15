@@ -39,7 +39,7 @@ p{
 }
 
 .container{
-    width: 1160px;
+    max-width: 1160px;
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -71,15 +71,25 @@ header{
     transition: 0.5s;
 }
 
+@media all and (max-width: 380px){
+    header .container{
+        flex-direction: column;
+    }
+}
+
 /* Construction du hero */
 
 section{
-    width: 1160px;
+    max-width: 1160px;
     margin: 80px auto 0 auto;
 }
 
 .main-image{
     position: relative;
+}
+
+.main-image img{
+    width: 100%;
 }
 
 .main-image div{
@@ -100,11 +110,19 @@ section{
     margin: 0px 17px;
 }
 
+@media all and (max-width: 500px){
+    .main-image div{
+        position: static;
+        height: auto;
+    }
+}
+
 /* Construction des cartes */
 
 .container-items{
     display: flex;
-    justify-content: space-between;
+    justify-content: space-around;
+    flex-wrap: wrap;
 }
 
 .items{
@@ -127,6 +145,15 @@ section{
 .business{
     display: flex;
     justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+.business-img{
+    max-width: 570px;
+}
+
+.business img{
+    width: 100%;
 }
 
 .business-description{
@@ -152,4 +179,10 @@ footer a{
 footer p{
     font-size: 22px;
     font-weight: bold;
+}
+
+@media all and (max-width: 540px){
+    footer .container{
+        flex-direction: column;
+    }
 }

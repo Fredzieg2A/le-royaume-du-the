@@ -4,6 +4,11 @@
     font-family: 'Poppins', sans-serif;
 }
 
+
+h1{
+    font-size: 22px;
+}
+
 h3{
     font-size: 18px;
     color: #dc143c;
@@ -33,12 +38,19 @@ p{
     padding: 0px 12px;
 }
 
+.container{
+    width: 1160px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px 0px;
+    margin: auto;
+}
+
 /* Construction du Header */
 
 header{
     background-color: #8fb900;
-    display: flex;
-    justify-content: center;
     color: #fff;
 }
 
@@ -57,18 +69,6 @@ header{
     background-color: #fff;
     color: #8fb900;
     transition: 0.5s;
-}
-
-header h1{
-    font-size: 22px;
-}
-
-header div{
-    width: 1160px;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    padding: 15px 0px;
 }
 
 /* Construction du hero */
@@ -132,4 +132,24 @@ section{
 .business-description{
     width: 570px;
     text-align: justify;
+}
+
+/* Section footer */
+
+footer{
+    margin-top: 80px;
+    background-color: #8fb900;
+    color: #fff;
+}
+
+footer a{
+    color: #fff;
+    margin-left: 10px;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+footer p{
+    font-size: 22px;
+    font-weight: bold;
 }
